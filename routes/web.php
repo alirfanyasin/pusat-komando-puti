@@ -15,16 +15,8 @@ Route::get('/report', function () {
 
 // Dashboard
 Route::prefix('app')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('pages.app.dashboard');
-    })->name('dashboard');
 
 
-    Route::prefix('ticket')->group(function () {
-        Route::get('/new', function () {
-            return view('pages.app.ticket-new');
-        })->name('ticket-new');
-    });
 
     // Route::resource('ticket', TicketController::class);
 
